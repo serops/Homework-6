@@ -1,0 +1,36 @@
+
+
+
+API Degaut Key: e598fcea35b3d55d1e13d258f2eaaf4a
+My API Key: 1c2a3377eeea4d74ddc0ffd638238cfb
+
+sample URL: https://samples.openweathermap.org/data/2.5/forecast?q=London,us&mode=xml&appid=b6907d289e10d714a6e88b30761fae22
+
+
+By city name
+Description:
+You can search weather forecast for 5 days with data every 3 hours by city name.
+All weather data can be obtained in JSON and XML formats.
+
+API call:
+api.openweathermap.org/data/2.5/forecast?q={city name}&appid={your api key}
+api.openweathermap.org/data/2.5/forecast?q={city name},{state}&appid={your api key}
+api.openweathermap.org/data/2.5/forecast?q={city name},{state},{country code}&appid={your api key}
+Parameters:
+q city name, state and and country code divided by comma, use ISO 3166 country codes. 
+You can specify the parameter not only in English. In this case, the API response should 
+be returned in the same language as the language of requested location name if the location 
+is in our predefined list of more than 200,000 locations.
+
+Examples of API calls:
+
+api.openweathermap.org/data/2.5/forecast?q=London,us&mode=xml
+
+
+
+
+username: serops@gmail.com
+Password: Kesab123
+
+
+api.openweathermap.org/data/2.5/forecast?q={city name}&appid=1c2a3377eeea4d74ddc0ffd638238cfb

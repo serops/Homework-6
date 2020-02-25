@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- link to local stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- script files -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="weatherScript.js"></script>
+</head>
+<body>
+    <!-- This section is for the Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-secondary justify-content-center">
+            <h1>Weather Dashboard</h1>
+            </button>
+        </nav> 
+
+    <!-- The rest of the page starts from here -->
+
+    <div class="container-fluid">
+      <div class="row">
+      <!-- the search and the search history box. The left column-->
+        <div class="col-sm-4">
+          <!-- input box is here ***********-->
+            <form class="form-inline mr-auto">
+              <input id="citySearch" class="form-control" type="text" placeholder="City name" aria-label="Search" value="" >
+              <button id="searchBtn" class="btn btn-mdb-color btn-rounded btn-sm my-0 ml-sm-2" type="submit">Search </button>
+            </form>        
+            <br>
+          <!-- The search history section *****-->
+
+            <div class="panel-group ">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h6 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse1">Search Hitory</a>
+                  </h6>
+                  <hr>
+                </div>
+                <div id="collapse1" class="panel-collapse">
+                  <ul class="list-group">
+                                      
+                  </ul>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+       <!-- Weather results. The right column-->
+        <div class="col-sm-8">
+          <!-- current temperature box************** -->
+            <div id="currentTempBox">
+              <h3 class="text-capitalize"> <span id="cityName">...</span> <span id="currentDate">date...</span><img id="currentIcon" href=""></img></h3>
+              <p>Temperature: <span id="currentTemp">...</span> &#8451;</p>
+              <p>Humidity: <span id="currentHumidity">...</span></p>
+              <p>Wind Speed: <span id="currentWindSpeed">...</span></p>
+              <p>UV Index: <span id="currentUV">...</span></p>
+              <img src="Assets/UvColors.png" alt="" width="250">
+            </div>    
+        
+        <br>
+        <br>
+        <h4 class="text-capitalize">5 Day Forecast</h4>
+
+          <!-- the five day forecast box**************** -->
+
+        <div class="row">
+            <div class="col-lg bg-primary text-white">
+              <p id="dateDayOne">date.....</p>
+              <img id="iconDayOne" href=""></img>
+              <p>Temp: <span id="tempDayOne">...</span>  &#8451;</p>
+              <p>Humidity: <span id="humidityDayOne">...</span> %</p>
+            </div>
+            <div class="col-lg bg-primary text-white">
+              <p id="dateDayTwo">date.....</p>
+              <img id="iconDayTwo" href=""></img>
+              <p>Temp: <span id="tempDayTwo">...</span> &#8451;</p>
+              <p>Humidity: <span id="humidityDayTwo">...</span> %</p>
+            </div>
+            <div class="col-lg bg-primary text-white">
+              <p id="dateDayThree">date.....</p>
+              <img id="iconDayThree" href=""></img>
+              <p>Temp: <span id="tempDayThree">...</span> &#8451;</p>
+              <p>Humidity: <span id="humidityDayThree">...</span> %</p>
+            </div>
+            <div class="col-lg bg-primary text-white">
+              <p id="dateDayFour">date.....</p>
+              <img id="iconDayFour" href=""></img>
+              <p>Temp: <span id="tempDayFour">...</span> &#8451;</p>
+              <p>Humidity: <span id="humidityDayFour">...</span> %</p>
+            </div>
+            <div class="col-lg bg-primary text-white">
+              <p id="dateDayFive">date.....</p>
+              <img id="iconDayFive" href=""></img>
+              <p>Temp: <span id="tempDayFive">...</span> &#8451;</p>
+              <p>Humidity: <span id="humidityDayFive">...</span> %</p>
+            </div>
+        </div>
+          <!-- Five day forecast ends here***************** -->
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript --> 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+</body>
+</html>

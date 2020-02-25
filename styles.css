@@ -1,0 +1,71 @@
+.container-fluid{
+    padding-right: 35px;
+}
+
+.col-sm-4 {
+    padding-right: 20px;
+    padding-top: 25px;
+}
+/* 
+.form-control {
+    max-width: 130px;
+} */
+
+.col-sm-8 {
+    padding-left: 30px;
+}
+
+
+
+.col-lg {
+    border: solid whitesmoke;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+
+
+body {
+   background:whitesmoke;
+}
+
+
+#currentTempBox {
+    background-color: white;
+    border: solid gray 0.5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+
+
+.btn{
+    border-radius: 5px;
+    border: solid gray 1px;
+}
+
+.delete{
+    padding-left: 10px;
+    padding-right:10px;
+    float: right;
+    background-color:ghostwhite;
+    border-radius: 10px;
+    border: solid 1px;
+    font-size: 0.5rem;
+    margin-top: 8px;
+
+}
+
+
+.list-group-item{
+    padding-right: 20px;
+}
+
